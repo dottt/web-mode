@@ -3961,7 +3961,7 @@ another auto-completion with different ac-sources (e.g. ac-php)")
           (setq controls (append controls (list (cons 'close "ctrl")))))
          ((web-mode-block-starts-with "els\\|catch\\|final" reg-beg)
           (setq controls (append controls (list (cons 'inside "ctrl")))))
-         ((web-mode-block-starts-with "filter\\|foreach\\|if\\|last\\|next\\|perl\\|rawperl\\|try\\|unless\\|while" reg-beg)
+         ((web-mode-block-starts-with "filter\\|for\\|foreach\\|if\\|last\\|next\\|perl\\|rawperl\\|try\\|unless\\|while" reg-beg)
           (setq controls (append controls (list (cons 'open "ctrl")))))
          )
         ) ;template-toolkit
